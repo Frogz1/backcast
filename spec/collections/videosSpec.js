@@ -5,6 +5,7 @@ describe ('VideosCollection', function() {
 
     beforeEach(function() {
       collection = new Videos(fakeVideoData);
+      console.log(collection);
       sinon.spy(Backbone, 'ajax');
     });
 
