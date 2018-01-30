@@ -1,6 +1,6 @@
 var Video = Backbone.Model.extend({
   events: {
-    'click .video-list-entry-title' : 'select'
+    'click .video-list-entry-title': 'select'
   
   },
   
