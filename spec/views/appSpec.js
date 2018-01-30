@@ -34,15 +34,15 @@ describe('AppView', function() {
 
   describe('when rendering live data from YouTube', function() {
 
-    it('should render a Search view', function() {
+    xit('should render a Search view', function() {
       expect(SearchView.prototype.render).to.have.callCount(1);
     });
 
-    it('should call fetch videos when app is initialized', function() {
+    xit('should call fetch videos when app is initialized', function() {
       expect(Backbone.ajax).to.have.been.called;
     });
 
-    it('should select the first video once new videos are loaded', function() {
+    xit('should select the first video once new videos are loaded', function() {
       var model = view.videos.at(0);
       sinon.spy(model, 'select');
       view.videos.trigger('sync');
